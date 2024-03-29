@@ -1,4 +1,6 @@
-﻿namespace EstruturaDeDecisao04
+﻿using System;
+
+namespace EstruturaDeDecisao04
 {
     internal class Program
     {
@@ -9,7 +11,11 @@
             Console.Write("Digite um nímero: ");
             int numero = int.Parse(Console.ReadLine());
 
-            if(numero mod 2)
+             if (numero % 2 == 0)
+                Console.WriteLine($"O numero {numero} é: Par");
+
+             else
+                Console.WriteLine($"O numero {numero} é: Impar");
         }
     }
 }
