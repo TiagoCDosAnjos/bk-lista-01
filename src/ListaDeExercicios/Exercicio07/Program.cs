@@ -15,12 +15,9 @@
             Console.Write("Digite o valor de C: ");
             double c = double.Parse(Console.ReadLine());
 
-            double menor;
+            string resultado = (a + b < c) ? $"A= {a} + B = {b} é menor que C = {c}" : $"A= {a} + B = {b} não é menor que C = {c}";
 
-            if ((a + b) < c)
-                Console.WriteLine($"A= {a} + B = {b} é menor que C = {c}");
-            else
-                Console.WriteLine($"A= {a} + B = {b} não é menor que C = {c}");
+            Console.Write(resultado);
         }
     }
 }

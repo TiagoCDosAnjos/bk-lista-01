@@ -16,7 +16,6 @@
             double area = comprimentoDoTerreno * larguraDoTerreno;
 
             Console.WriteLine($"A área do terreno é {area} metros quadrados.");
-
         }
     }
 }

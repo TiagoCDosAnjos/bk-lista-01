@@ -22,7 +22,6 @@
                 Console.WriteLine("Levemente acima do peso");
             else
                 Console.WriteLine("Obesidade");
-
         }
     }
 }

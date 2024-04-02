@@ -17,7 +17,6 @@
             double salarioTotal = salarioBase + (totalDeVendas * comissao);
 
             Console.WriteLine($"O salário total do vendedor é R$ {salarioTotal}");
-
         }
     }
 }

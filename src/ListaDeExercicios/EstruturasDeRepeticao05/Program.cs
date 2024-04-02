@@ -23,7 +23,6 @@ namespace EstruturasDeRepeticao05
             }
             Console.WriteLine();
         }
-
     }
 }
 
