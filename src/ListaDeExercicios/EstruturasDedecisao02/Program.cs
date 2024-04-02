@@ -7,29 +7,62 @@
             //Ordenar três valores inteiros e diferentes em ordem decrescente.
 
             Console.Write("Digite 0 primeiro valor: ");
-            int primeiro = int.Parse(Console.ReadLine());
+            int n1 = int.Parse(Console.ReadLine());
 
             Console.Write("Digite 0 segundo valor: ");
-            int segundo = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
 
             Console.Write("Digite 0 terceiro valor: ");
-            int terceiro = int.Parse(Console.ReadLine());
+            int n3 = int.Parse(Console.ReadLine());
 
-            int maior, segundoMaior, terceiroMaior;
+            int maior = 0, segundoMaior = 0, terceiroMaior = 0;
 
-            if ( primeiro > segundo & primeiro > terceiro)
-                maior = primeiro;
+            if (n1 >= n2 & n1 >= n3)
+            {
+                maior = n1;
 
-            else if ( segundo > terceiro)
-                maior = segundo;
+                if (n2 >= n3)
+                {
+                    segundoMaior = n2;
+                    terceiroMaior = n3;
+                }
+                else
+                {
+                    segundoMaior = n3;
+                    terceiroMaior = n2;
+                }
+            }
+            else if (n2 >= n1 & n2 >= n3)
+            {
+                maior = n2;
+
+                if (n3 >= n1)
+                {
+                    segundoMaior = n3;
+                    terceiroMaior = n1;
+                }
+                else
+                {
+                    segundoMaior = n1;
+                    terceiroMaior = n3;
+                }
+            }
             else
-                maior = terceiro;
+            {
+                maior = n3;
+                if (n2 >= n1)
+                {
+                    segundoMaior = n2;
+                    terceiroMaior = n1;
+                }
+                else
+                {
+                    segundoMaior = n1;
+                    terceiroMaior = n2;
+                }
+            }
 
-            if (  )
-
-            Console.WriteLine("0 maior valor é: " + maior);
-
-
+            Console.WriteLine($"Os números em ordem decrescente são: {maior} , {segundoMaior} , {terceiroMaior}");
         }
     }
 }
